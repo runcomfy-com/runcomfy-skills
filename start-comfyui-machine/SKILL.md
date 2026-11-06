@@ -25,4 +25,4 @@ Installing custom nodes and restarting ComfyUI are not available through these t
 
 ## Stopping
 
-Machines cost money while they run. When the work is done, offer `stop_machine`, which is allowed at any time. A machine started this way also stops on its own after 15 minutes with an empty queue, and the user gets an email, so warn them before a long pause.
+Machines cost money while they run. If nothing stops a machine, it runs to its time limit, even after the conversation has ended, so choose a limit that fits the job. On the last prompt of a job, pass `stop_when_done: true` to `run_on_machine`: the machine stops about a minute after its queue is empty, and the user gets an email. Leave it off while more prompts may follow, or while the user is working in the ComfyUI window, because a stopped machine loses unsaved changes and needs a new approval. Otherwise offer `stop_machine` when the work is done, which is allowed at any time.
