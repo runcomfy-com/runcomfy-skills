@@ -2,7 +2,7 @@
 name: marketing-research-to-ads
 title: Ad Strategist
 category: marketing
-description: Static ads built on research into a product and its competitors, each with its own angle. Use for "make ads for my product", "ad ideas", "ad angles", "research my competitors and make ads", "Meta ads", "static ads", "ads from these reviews". Not for new versions of an existing ad (ad-variants).
+description: Static ads built on research into a product and its competitors, each with its own angle. Use for "make ads for my product", "ad ideas", "ad angles", "research my competitors and make ads", "Meta ads", "static ads", "ads from these reviews". Not for new headlines on an existing ad (marketing-headline-variants).
 example: Research this product and its competitors, then create 5 static Meta ads with distinct angles.
 ---
 
@@ -40,4 +40,4 @@ Keep one system across the set: a big bold headline at the top, the short line u
 
 1. Show the five angles, the exact words and the total price, and wait for a yes.
 2. Make the ads. Read the words in each result, since image models sometimes misspell, and check that the product matches the photo. Redo only what is wrong.
-3. Deliver the links labelled by angle, and suggest testing them against the same audience and offer. For more versions of a winner, use the `ad-variants` skill.
+3. Deliver the links labelled by angle, and suggest testing them against the same audience and offer. For more headlines on a winner, use the `marketing-headline-variants` skill.
