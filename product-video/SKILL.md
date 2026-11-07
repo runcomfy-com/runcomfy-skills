@@ -2,7 +2,7 @@
 name: product-video
 title: Product video
 category: marketing
-description: A polished video of a product with no presenter, such as a showcase, a reveal or a TV-style spot. Use for "product video", "product commercial", "TV ad", "animate this product photo", "cinematic shot of my product". Not for a creator talking to camera (ugc-video).
+description: A polished video of a product with no presenter, such as a showcase, a reveal or a TV-style spot. Use for "product video", "product commercial", "TV ad", "animate this product photo", "cinematic shot of my product". Not for a creator talking to camera (ugc-flow).
 example: Turn this perfume photo into a 10-second cinematic reveal with a slow camera move.
 ---
 
