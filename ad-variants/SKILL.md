@@ -2,7 +2,7 @@
 name: ad-variants
 title: Ad variants
 category: marketing
-description: Turn one ad into several versions to test. Use for "more variations", "different headlines", "resize this ad", "localise this ad", "new hooks for this video". Not for new ideas from scratch (ad-concepts).
+description: Turn one ad into several versions to test. Use for "more variations", "different headlines", "resize this ad", "localise this ad", "new hooks for this video". Not for new ideas from scratch (marketing-research-to-ads).
 example: Give me 3 headline variations of this ad, and resize the best one for Stories.
 ---
 

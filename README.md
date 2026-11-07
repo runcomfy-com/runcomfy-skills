@@ -16,7 +16,7 @@ These skills call RunComfy MCP tools such as `quote_model_run` and `run_model`, 
 
 | Category | Skills |
 | --- | --- |
-| Marketing | [ad-concepts](ad-concepts/SKILL.md), [ad-from-reference](ad-from-reference/SKILL.md), [ad-variants](ad-variants/SKILL.md), [marketplace-images](marketplace-images/SKILL.md), [product-photoshoot](product-photoshoot/SKILL.md), [product-video](product-video/SKILL.md), [ugc-flow](ugc-flow/SKILL.md), [unboxing-ugc-skill](unboxing-ugc-skill/SKILL.md), [try-on-ugc-skill](try-on-ugc-skill/SKILL.md) |
+| Marketing | [marketing-research-to-ads](marketing-research-to-ads/SKILL.md), [ad-from-reference](ad-from-reference/SKILL.md), [ad-variants](ad-variants/SKILL.md), [marketplace-images](marketplace-images/SKILL.md), [product-photoshoot](product-photoshoot/SKILL.md), [product-video](product-video/SKILL.md), [ugc-flow](ugc-flow/SKILL.md), [unboxing-ugc-skill](unboxing-ugc-skill/SKILL.md), [try-on-ugc-skill](try-on-ugc-skill/SKILL.md) |
 | Content | [faceless-explainer](faceless-explainer/SKILL.md), [talking-avatar](talking-avatar/SKILL.md), [youtube-thumbnail](youtube-thumbnail/SKILL.md) |
 | Edit | [edit-image](edit-image/SKILL.md), [edit-video](edit-video/SKILL.md), [expand-image](expand-image/SKILL.md), [face-swap](face-swap/SKILL.md), [lip-sync](lip-sync/SKILL.md), [remove-background](remove-background/SKILL.md), [upscale](upscale/SKILL.md) |
 | Audio | [make-audio](make-audio/SKILL.md) |

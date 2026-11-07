@@ -2,7 +2,7 @@
 name: product-photoshoot
 title: Product photoshoot
 category: marketing
-description: Brand-quality product images from a product photo or description. Use for "product photo", "studio shot", "lifestyle image", "hero banner", "Pinterest pin", "carousel", "someone holding my product", "model wearing my product", "floating product", "restyle this image". Not for a marketplace listing set (marketplace-images) or ads built around a message (ad-concepts).
+description: Brand-quality product images from a product photo or description. Use for "product photo", "studio shot", "lifestyle image", "hero banner", "Pinterest pin", "carousel", "someone holding my product", "model wearing my product", "floating product", "restyle this image". Not for a marketplace listing set (marketplace-images) or ads built around a message (marketing-research-to-ads).
 example: Make 3 lifestyle shots of this bottle for my online store.
 ---
 
