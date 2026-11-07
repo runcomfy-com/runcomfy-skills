@@ -3,7 +3,7 @@ name: try-on-ugc-skill
 title: Try-on UGC
 category: marketing
 description: A creator-style try-on video that shows how an outfit looks and fits. Use for "try-on video", "outfit video", "get ready with me", "how this fits", "fashion UGC". Not for a review of a product that is not worn (ugc-flow) or for changing clothes in a photo (edit-image).
-example: Create a 12-second try-on of this outfit with this creator.
+example: Create a 15-second try-on of this outfit with this creator.
 ---
 
 # Try-on UGC
@@ -15,7 +15,7 @@ The change is the point: the creator shows the clothes, the viewer sees them up 
 - The outfit: a photo laid flat or on a hanger, plus anything worn with it, and what should stand out, such as the fit, the fabric or one detail.
 - The creator: their photo, or a generated person. Only use a real person who agreed.
 
-Default to 12 seconds, 9:16 for social and 16:9 for a website.
+Default to 15 seconds: about 4 for the selfie, 5 for the bed and 6 for the whole body. Use 9:16 for social and 16:9 for a website.
 
 ## Plan the shots
 
@@ -33,20 +33,26 @@ Three short spoken lines, about 15 words in all, the way a person talks. Do not 
 
 Make one still for each shot, so the clothes and the room stay the same. Each one costs far less than video, so show them to the user first.
 
+Give every piece its length, such as a cardigan that ends at the waist and a skirt one and a half times as long, with its hem just below the knee. "Long" or "midi" alone comes out too long or too short.
+
 | Image | Model | Notes |
 | --- | --- | --- |
 | Outfit, if the user has no good photo | `openai/gpt-image-2.5/sunburst/text-to-image` | A flat lay from above, with the fabric texture visible |
 | Creator, if generated | `bytedance/seedream-5.0-pro/text-to-image` | Head and shoulders in a plain T-shirt, sharp |
-| The three shots | `bytedance/seedream-5.0-pro/image-to-image` | Give it the outfit and the creator. Make the selfie first, then use it as a reference for the whole-body still so the room matches |
+| Selfie and bed | `bytedance/seedream-5.0-pro/image-to-image` | Give it the outfit and the creator. Make the selfie first, with her phone hand out of frame |
+| Whole body | `openai/gpt-image-2.5/sunburst/edit` | Give it the outfit, the creator and the selfie, so the room matches. Say she is an adult whose head is about a seventh of her height, and keep the camera nearly level. From a head-and-shoulders photo, Seedream draws the head too large |
+
+Before the video, check her proportions in the whole-body still: an adult stands about seven heads tall.
 
 ## Make the video
 
-Use `bytedance/seedance-2.5/reference-to-video/720p` with the three stills, the outfit and the creator as `images`, in that order, and with sound on. Keep the prompt under 150 words:
+Use `bytedance/seedance-2.5/reference-to-video/720p` with the three stills, the outfit and the creator as `images`, in that order, and with sound on. Keep the prompt to about 150 words:
 
 - Say which image opens which shot, and give each shot its length.
 - Say what moves in one line per shot. Do not describe what the stills already show.
 - Put the spoken lines in quotes.
 - Keep the camera still in the second and third shots.
+- In the bed shot, say only her hand comes in, or her head may enter the frame.
 - End with natural delivery, real physics, no music and no captions.
 
 ## Check it before you deliver
