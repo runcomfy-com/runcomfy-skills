@@ -2,7 +2,7 @@
 name: make-audio
 title: Make music or a voiceover
 category: audio
-description: Generate a song, background music or spoken audio. Use for "make a song", "background music", "jingle", "voiceover", "read this aloud", "extend this track".
+description: Generate a song, background music or spoken audio. Use for "make a song", "background music", "jingle", "voiceover", "read this aloud".
 example: Make a 30-second upbeat instrumental for my product video.
 ---
 
@@ -14,8 +14,6 @@ example: Make a 30-second upbeat instrumental for my product video.
 | --- | --- | --- |
 | Music, the default | `acestep-ai/ace-step-1.5/text-to-audio` | Styles as tags, optional lyrics, very low cost |
 | Polished vocals, commercial use | `elevenlabs/elevenlabs/music-generation` | Costs much more, offer it when quality matters most |
-| Lengthen a track | `acestep-ai/ace-step/audio-outpaint` | Set which end grows and by how much |
-| Redo one section of a track | `acestep-ai/ace-step/audio-inpaint` | Give the time range |
 | Speech | `bytedance/seed-audio-1.0/text-to-audio` | Natural speech from text |
 | Speech in a listed voice | `heygen/heygen-voice/text-to-audio` | Needs a voice id |
 

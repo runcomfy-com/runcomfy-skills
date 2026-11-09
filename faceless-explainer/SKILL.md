@@ -2,8 +2,8 @@
 name: faceless-explainer
 title: Faceless explainer video
 category: content
-description: A narrated video with no presenter, from a topic or document, in a style you can pick. Use for "faceless video", "explainer", "YouTube Shorts about", "narrated story", "documentary video", "stickman video", "picture story", "children's song video", "turn this article into a video".
-example: Make a 45-second faceless explainer about how the Mona Lisa became famous.
+description: A narrated video with no presenter, from a topic or document, in a style you can pick. Use for "faceless video", "explainer", "YouTube Shorts about", "narrated story", "documentary video", "stickman cartoon", "editorial motion graphics", "paper diorama video", "picture story", "children's song video", "turn this article into a video".
+example: Create a stickman cartoon faceless video showing Odysseus's journey to Troy and back home.
 ---
 
 # Faceless explainer video
@@ -29,9 +29,9 @@ Write one style description and repeat it word for word in every scene prompt, s
 
 | Style | Description |
 | --- | --- |
-| Editorial collage | Cream paper with light grain, black-and-white halftone cutouts, torn edges, one accent colour, soft paper shadows |
-| Stickman | Simple black line figures with round heads on an off-white page, clear poses, one accent colour |
-| Paper diorama | A miniature set of layered card, warm side light, shallow focus, a stop-motion feel |
+| Editorial motion graphics | A warm beige handmade-paper set, cutout figures and props with thin white borders and soft shadows, some black-and-white engraving cutouts, deep crimson accents such as a big paper circle and marker lines, lots of empty paper |
+| Stickman cartoon | A simple flat cartoon: chibi characters with round heads as big as their bodies, very thick dark outlines, flat colours with one shadow tone, cute faces with dot eyes and thick eyebrows, a warm muted palette |
+| Paper diorama | A miniature set of craft paper, cardboard and old newspaper with faint print, cutout paper figures, one accent colour such as teal-blue sails, warm side light, shallow focus and floating dust |
 | Pastel flat | Flat shapes in soft pastel colours, no outlines, friendly and simple |
 | Hand drawn | Ink and pencil lines with a light watercolour wash and visible paper, like a sketchbook |
 | Fairy tale | Painted 2D scenes, rich jewel colours, warm light against deep shadow, expressive characters |
@@ -48,16 +48,15 @@ Write one style description and repeat it word for word in every scene prompt, s
 
 ## Make it
 
-| Part | Model |
-| --- | --- |
-| Voiceover | `bytedance/seed-audio-1.0/text-to-audio` |
-| Scene stills, same style throughout | `blackforestlabs/flux-2-klein/9b/text-to-image` |
-| Scene stills that must keep a character | `google/nano-banana-2/edit` |
-| Moving scenes from stills | `kling/kling-3.0/pro/image-to-video` |
-| Moving scenes, lower cost | `bytedance/seedance-2.0-mini/image-to-video` |
-| A song or background music | `acestep-ai/ace-step-1.5/text-to-audio` |
+| Part | Model | Notes |
+| --- | --- | --- |
+| Voiceover | `heygen/heygen-voice/text-to-audio` | One request per scene line, so each line's length is known. Pick a voice that suits the story |
+| The first scene still | `openai/gpt-image-2.5/sunburst/text-to-image` | Sets the style. Show it before making the rest |
+| The other scene stills | `openai/gpt-image-2.5/sunburst/edit` | Give it the first still and say "in exactly the same style as the image", so every scene matches. Add a character's earlier still to keep them the same |
+| Moving scenes | `bytedance/seedance-2.5/reference-to-video/720p` | Three stills per clip, each opening one shot, with the clip as long as their three lines. Ask for gentle movement in the style of the stills, no text and no speech |
+| A song or background music | `acestep-ai/ace-step-1.5/text-to-audio` | Only when they ask for one |
 
-Make the voiceover or song first, and fit the scenes to its real length if the result reports it. Make the first scene and show it before making the rest, checking the style, framing, character and movement.
+Make the voiceover first and fit the scenes to its real length: each scene lasts as long as its line. If the narration runs long, tighten the script rather than rushing the voice.
 
 ## Deliver
 
