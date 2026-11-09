@@ -18,7 +18,7 @@ Show the sizes and the price, and wait for a yes.
 
 ## Make each size
 
-Use `openai/gpt-image-2.5/sunburst/edit` with the ad as the only image and `aspect_ratio` set to the placement, one request per size:
+Use `openai/gpt-image-2.5/sunburst/edit` with the ad as the only image and the aspect ratio set to the placement, one request per size:
 
 > Recompose this ad as a vertical 9:16 story ad. Keep the product, the photograph's look and every word exactly as they are, in the same fonts and colours; rearrange the layout to suit the new shape instead of cropping, and keep all text and the product well inside the edges. No other text.
 
